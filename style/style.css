@@ -1,8 +1,47 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Mobile first */
+
+.config-img{
+    width: 100px;
+    height: 100px;
 }
+
+.carousel{
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.carousel-inner{
+    display: flex;
+    justify-content: flex-start;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item{
+    min-width: 100%;
+}
+
+.carousel-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-btn-left{
+    left: 10px;
+}
+
+.carousel-btn-right{
+    right: 10px;
+}
+
 
 /* Media Queries */
 
